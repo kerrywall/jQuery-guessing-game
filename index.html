@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Trek episode or nail polish colour?</title>
+  <link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>star trek episode <span class="or">or</span> nail polish colour?</h1>
+    <p class="intro">Sure, they <em>seem</em> like completely unrelated things, but... OK, they're completely unrelated things. But they sound like they could be related things. This game* uses the names of episodes from Star Trek: The Original Series (sorry, TNG fans, maybe someday) and nail polish colours from the OPI and SpaRitual lines and forces you to consider which one is which.</p>
+    <p class="disclaimer">* There are no scores, so it's not really a game. Or maybe it's not really a sport. I don't know.</p>
+    <p class="intro">Ready? Got your <a href="https://www.youtube.com/watch?v=_dnZHea_TI0" target="_blank">Amok Time music</a> set?</p>
+    <a data-scroll href="#main" class="engage">
+      warp speed! &#10549;
+    </a>
+  </header>
+  
+  <div id="main" class="main">
+    <div class="quit">
+      <h2 id="name" class="name"></h2>
+      <h2 id="result" class="results"></h2>
+      <div id="options">
+        <div class="choice" id="trek">star trek</div>
+        <div class="choice" id="polish">nail polish</div>
+      </div>
+      <div class="generate" id="generate">go again?</div>
+    </div>
+  </div>
+  
+  <footer class="clearfix">
+    <div class="left">
+      <h4>about</h4>
+      <p><a href="http://twitter.com/kerrywall" target="_blank">Kerry</a> made this site for kicks using HTML, CSS and jQuery. It was basically done on a dare after a water-cooler discussion turned very nerdy (and awesome). </p>
+    </div>
+    <div class="right">
+      <h4>share?</h4>
+      <p>If you want to give this some attention on the interwebs, that'd be swell.</p>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="kerrywall">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </div>
+  </footer>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    smoothScroll.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+ .clearfix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+ }
+
+ body {
+ 	font-family: 'Oswald', sans-serif;
+ 	text-align: center;
+ 	background-color: #ecf0f1;
+ }
+
+ 	p {
+ 		line-height: 1.5;
+ 		font-size: 18px;
+ 	}
+
+ 	h1, h2, h3, h4, h5, h6 {
+ 		text-transform: uppercase;
+ 		font-family: 'Oswald', sans-serif;
+ 	}
+
+ 	header {
+ 		padding: 10% 15% 5% 15%;
+ 		background: url(splash.JPG) 0 0;
+ 		background-size: cover;
+ 		background-attachment: fixed;
+ 		background-position: center;
+ 		width: 100%;
+ 		color: #f7f7f7;
+ 		font-weight: 300;
+ 		box-shadow: 0 0 10px #111;
+ 	}
+
+	 	header h1 {
+	 		margin: 0;
+	 		font-size: 48px;
+	 		text-shadow: 4px 4px 0 #111;
+	 		margin-bottom: 40px;
+	 		color: #f1c40f;
+	 	}
+
+		 	header h1 span.or {
+		 		font-family: 'Dancing Script', cursive;
+		 		display: block;
+		 		text-transform: lowercase;
+		 		color: #fff;
+		 	}
+
+		 header p {
+		 	font-family: 'Roboto Slab', serif;
+		 	text-align: justify;
+		 	text-shadow: 2px 2px 0 #000;
+		 }
+
+		 	header p.disclaimer {
+		 		font-size: 14px;
+		 	}
+
+		 header a, footer a {
+		 	color: white;
+		 }
+
+		 header a:hover, footer a:hover {
+		 	text-decoration: none;
+		 }
+
+		 header a.engage {
+		 	clear: both;
+		 	padding: 10px;
+		 	color: #c0392b;
+		 	border: 3px solid #c0392b;
+		 	background: white;
+		 	border-radius: 15px;
+		 	margin-top: 10px;
+		 	text-transform: uppercase;
+		 	text-decoration: none;
+		 	font-weight: bold;
+		 	width: 20%;
+		 }
+
+	 .main {
+	 	width: 70%;
+	 	margin: 0 auto;
+	 	font-weight: 300;
+	 	font-size: 24px;
+	 	text-align: center;
+	 	font-family: 'Roboto Slab', serif;
+	 	padding: 50px 0;
+	 	min-height: 400px;
+	 }
+
+		 .main h2.name, .main h2.results {
+		 	font-size: 48px;
+		 	padding: 20px;
+		 	margin-bottom: 40px;
+		 }
+
+		 .main h2.name {
+		 	color: #d35400;
+		 	text-shadow: 1px 1px #fff;
+		 }
+
+		 .main h2.results {
+		 	color: #111;
+		 }
+
+		 .main h2.results span.wrong {
+		 	color: #c0392b;
+		 }
+
+		 .main h2.results span.right {
+			color: #27ae60;
+		 }
+
+		 .main .choice, .main .generate {
+		 	display: inline;
+		 	padding: 10px;
+		 	border: 3px solid #f39c12;
+		 	color: #f39c12;
+		 	border-radius: 15px;
+		 	font-size: 20px;
+		 	text-transform: uppercase;
+		 	background: #fff;
+		 	cursor: pointer;
+		 }
+
+		 .main .choice {
+
+		 }
+
+		 .main .generate {
+
+		 }
+
+		 .main .results {
+		 	margin-bottom: 40px;
+		 }
+
+	footer {
+		background: #2c3e50;
+		padding: 10px 20px 20px 20px;
+		text-align: left;
+		color: white;
+		font-family: 'Roboto Slab', serif;
+	}
+
+		footer p {
+			font-size: 14px;
+		}
+
+		footer .left {
+			float: left;
+			width: 40%;
+			text-align: justify;
+			margin-right: 10%;
+		}
+
+		footer .right {
+			float: left;
+			width: 50%;
+
+		}
