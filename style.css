@@ -172,3 +172,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 			width: 50%;
 
 		}
+
+		@media (max-width: 425px) {
+			.main .choice, .main .generate {
+				display: block;
+				margin: 5px 0;
+			}
+		}
