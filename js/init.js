@@ -1,5 +1,3 @@
-var counter = 0;
-
 var content = [
 
   {
@@ -145,43 +143,58 @@ var content = [
 	"fullAnswer":"Star Trek episode"
   }
   
-]
+];
+
+var trekApp = {};
+
+trekApp.init = function() {
+    
+    var options = content.length,
+        selection = content[Math.floor(Math.random()*options)],
+        type = selection["answer"],
+        fullAnswer = selection["fullAnswer"],
+        $name = $('#name'),
+        $generate = $('#generate'),
+        $result = $('#result'),
+        $options = $('#options');
+
+    $name.html(selection["name"]);
+    $generate.hide();
+    $result.hide();
+
+  $('.choice').on('click', function(e) {
+    var chosenAnswer = e.target.id;
+    
+    $result.show();
+    $name.hide();
+    $options.hide();
+      
+    if (chosenAnswer == type) {
+      $('#result').html("<span class='right'>Affirmative, captain!</span> It's a " + fullAnswer + ".");
+    } else {
+      $('#result').html("<span class='wrong'>Dammit, Jim!</span> It's a " + fullAnswer + ".");
+    }
+
+    $generate.show();
+    
+  });
+
+   $generate.on('click', function() {
+    
+    var selection = content[Math.floor(Math.random()*options)];
+    $name.html(selection["name"]);
+    var type = selection["answer"];
+    var fullAnswer = selection["fullAnswer"];
+    
+    $result.hide();
+    $name.show();
+    $options.show();
+    $generate.hide();
+  });
+}
+
+
 $(document).ready(function() {
-	var selection = content[Math.floor(Math.random()*24)];
-	type = selection["answer"];
-	fullAnswer = selection["fullAnswer"];
-	$('#name').html(selection["name"]);
-  $('#generate').hide();
-  $('#result').hide();
-
+  trekApp.init();
 });
 
- $('#generate').click(function() {
-	
-	var selection = content[Math.floor(Math.random()*24)];
-	$('#name').html(selection["name"]);
-	type = selection["answer"];
-	fullAnswer = selection["fullAnswer"];
-	
-	$('#result').hide();
-  $('#name').show();
-	$('#options').show();
-  $('#generate').hide();
-});
-
-$('.choice').click(function(e) {
-	var chosenAnswer = e.target.id;
-	
-	$('#result').show();
-  $('#name').hide();
-	$('#options').hide();
-		
-	if (chosenAnswer == type) {
-		$('#result').html("<span class='right'>Affirmative, captain!</span> It's a " + fullAnswer + ".");
-	} else {
-		$('#result').html("<span class='wrong'>Dammit, Jim!</span> It's a " + fullAnswer + ".");
-	}
-
-  $('#generate').show();
-	
-});

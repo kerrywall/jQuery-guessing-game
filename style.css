@@ -116,10 +116,12 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 		 .main h2.results span.wrong {
 		 	color: #c0392b;
+		 	display: block;
 		 }
 
 		 .main h2.results span.right {
 			color: #27ae60;
+			display: block;
 		 }
 
 		 .main .choice, .main .generate {
