@@ -104,6 +104,9 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	 		color: #000;
 	 	}
 
+	 	.main p {
+	 	}
+
 		 .main p.name {
 		 	color: #d35400;
 		 	text-shadow: 1px 1px #fff;
