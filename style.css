@@ -100,6 +100,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	 	min-height: 400px;
 	 }
 
+	 	.main a {
+	 		color: #000;
+	 	}
+
 		 .main p.name {
 		 	color: #d35400;
 		 	text-shadow: 1px 1px #fff;
