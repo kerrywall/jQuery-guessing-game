@@ -25,6 +25,6 @@ Go ape.
 
 Store your data in object format. The bare minimum is a name and a one-word "type" ID that will reflect one possibility or the other. Designate a more complete type description (for full sentences) further down in the code (line 63 in this release). You'll need to add conditions here if you have more than one type.
 
-Adjust the strings that feed into the #results h2 when a button is clicked to reflect whatever you want your right/wrong text to be.
+The file itself is thoroughly commented with instructions.
 
 Done.
