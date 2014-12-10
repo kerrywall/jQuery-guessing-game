@@ -23,7 +23,7 @@ Go ape.
 
 ### init.js
 
-Store the name (the thing you want people to guess about), the answer ID (which should line up with one of the two button IDs in index.html) and a fuller description of the answer in a string that will appear in the result h2.
+Store your data in object format. The bare minimum is a name and a one-word "type" ID that will reflect one possibility or the other. Designate a more complete type description (for full sentences) further down in the code (line 63 in this release). You'll need to add conditions here if you have more than one type.
 
 Adjust the strings that feed into the #results h2 when a button is clicked to reflect whatever you want your right/wrong text to be.
 

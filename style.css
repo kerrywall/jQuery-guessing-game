@@ -27,6 +27,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
  	h1, h2, h3, h4, h5, h6 {
  		text-transform: uppercase;
  		font-family: 'Oswald', sans-serif;
+ 		margin: 0;
  	}
 
  	header {
@@ -99,27 +100,25 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 	 	min-height: 400px;
 	 }
 
-		 .main h2.name, .main h2.results {
-		 	font-size: 48px;
-		 	padding: 20px;
-		 	margin-bottom: 40px;
-		 }
-
-		 .main h2.name {
+		 .main p.name {
 		 	color: #d35400;
 		 	text-shadow: 1px 1px #fff;
+		 	font-size: 48px;
+		 	padding: 20px;
+		 	margin: 40px 0;
 		 }
 
-		 .main h2.results {
+		 .main p.results {
 		 	color: #111;
+		 	font-size: 48px;
 		 }
 
-		 .main h2.results span.wrong {
+		 .main p.results span.wrong {
 		 	color: #c0392b;
 		 	display: block;
 		 }
 
-		 .main h2.results span.right {
+		 .main p.results span.right {
 			color: #27ae60;
 			display: block;
 		 }
@@ -137,7 +136,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 		 }
 
 		 .main .choice {
-
+			margin: 40px 0;
 		 }
 
 		 .main .generate {
